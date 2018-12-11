@@ -28,7 +28,7 @@ public class HuffmanCompress {
             Frequencies freqs = Frequencies.getFrequencies(inputFile, bits);//Gaunami faile esanciu simboliu dazniai
             freqs.increment(symbolLimit);//symbolLimit - EOF, pridedamas EOF prie dazniu lenteles
 
-            //freqs.printFreqs();
+            freqs.printFreqs();
 
 
             CodeTree code = CodeTree.buildCodeTree(freqs); //Sudaromas kodu medis
